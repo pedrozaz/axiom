@@ -1,3 +1,13 @@
 spring:
+  application:
+    name: axiom-engine
   profiles:
-    active: test
+    active: dev
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+topics:
+  content:
+    submitted: content.submitted

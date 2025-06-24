@@ -9,7 +9,6 @@ buildNumber.properties
 .idea/
 *.iml
 *.iws
-out/
 .vscode/
 Thumbs.db
 desktop.ini
@@ -36,3 +35,5 @@ docker-data/
 .env.*
 .data/
 data/
+src/main/resources/application-*.yml
+!src/main/resources/application-example.yml
